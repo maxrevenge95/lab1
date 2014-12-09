@@ -21,7 +21,6 @@ public class Student extends Fakultet implements SGStudent, Serializable {
 		numberExamBook = 272303;
 	}
 
-	@Override
 	public void setStudent(String nameU, String nameF, int codeF, String nameS,
 			int bYear, int kurs, long numbExB) {
 		setFakultet(nameU, nameF, codeF);
@@ -31,7 +30,6 @@ public class Student extends Fakultet implements SGStudent, Serializable {
 		numberExamBook = numbExB;
 	}
 
-	@Override
 	public Student getStudent() {
 		return this;
 	}

@@ -2,7 +2,7 @@ package Fakultet;
 
 import java.io.*;
 
-public class Fakultet implements SGFakultet, Serializable {
+public class Fakultet implements Serializable {
 	protected String universityName;
 	protected String fakultetName;
 	protected int codeFakultet;
@@ -49,19 +49,16 @@ public class Fakultet implements SGFakultet, Serializable {
 		return codeFakultet;
 	}
 
-	@Override
 	public Fakultet getFakultet() {
 		return this;
 	}
 
-	@Override
 	public void setFakultet(String arg1, String arg2, int arg3) {
 		universityName = arg1;
 		fakultetName = arg2;
 		codeFakultet = arg3;
 	}
 
-	@Override
 	public void setFakultet(Fakultet f) {
 		universityName = f.universityName;
 		fakultetName = f.fakultetName;
